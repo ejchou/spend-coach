@@ -10,12 +10,12 @@
 
 ## Overview
 
-Spend Coach explores how **real-time model feedback** can coach users toward healthier money habits inside Cash App.  
+Spend Coach explores how **real-time model feedback** can coach users toward healthier money habits.  
 The prototype shows:
-- A **Thinking → Result → Undo** loop with visible latency
+- A **Thinking → Result → Dismiss/Undo** loop with visible latency
 - **Confidence + rationale chips** for transparency
 - **Guardrails** (low-confidence state, slow fallback, error)
-- **Controls** (Accept, Tweak, Undo)
+- **Controls** (Confirm, Edit, Dismiss/Undo)
 
 > Goal: design for **trust, not magic** — every suggestion is explainable and reversible.
 
@@ -25,13 +25,13 @@ The prototype shows:
 
 1. Open the **Live Demo** link.  
 2. On the Spend Coach screen, use the **Sample Events**:
-   - Groceries high
-   - Delivery streak
-   - Paycheck deposit
-   - Slow fallback
-   - Error
+   - Dining high
+   - Shopping streak
+   - Paycheck
+   - Slow analysis
+   - Analysis error
 3. Watch the **Thinking** state for ~300–500 ms, then the **Result** state.
-4. Try **Accept / Tweak / Undo**.
+4. Try **Confirm / Edit / Undo**.
 5. Notice the small chip: *Model v0.2 · ~320 ms · confidence 0.82*.
 
 Screenshots are in `/assets/`.
@@ -43,8 +43,8 @@ Screenshots are in `/assets/`.
 This prototype uses pre-baked responses to simulate model output.  
 See `/data/model_responses.json` and `/data/transactions.json`.
 
-- **Groceries high** → high-confidence suggestion with rationale chips  
-- **Delivery streak** → low-confidence suggestion + “Why this?”  
+- **Dining high** → high-confidence suggestion with rationale chips  
+- **Shopping streak** → low-confidence suggestion with rationale chips 
 - **Paycheck deposit** → “Pay yourself first” nudge  
 - **Slow fallback** (>800ms) → safe default with clear copy  
 - **Error** → suggestions disabled; manual controls visible
@@ -54,8 +54,8 @@ See `/data/model_responses.json` and `/data/transactions.json`.
 ## Design Notes
 
 - **Latency & Confidence** are visible to set expectations.  
-- **Rationale chips** (“3 trips in 5 days”) replace long explanations.  
-- **Undo** and **Tweak** make suggestions safe and teachable.  
+- **Rationale chips** (“Weeknight increase”) replace long explanations.  
+- **Undo** and **Edit** make suggestions safe and teachable.  
 - **Modes:** Conservative / Balanced / Bold adjust thresholds (simulated).
 
 ---
@@ -70,4 +70,28 @@ See `/data/model_responses.json` and `/data/transactions.json`.
 ---
 
 ## File Map
+
+/assets
+hero.gif
+demo.mp4
+spendcoach_home.png
+spendcoach_analysis.png
+/data
+transactions.json
+model_responses.json
+README.md
+
+---
+
+## What I’d Explore Next
+
+- Hooking telemetry to measure **accept**, **override**, and **dismiss** rates  
+- **Multi-model routing** for budgeting vs. saving vs. cash-flow predictions  
+- Creating **design system primitives** for “intelligent states” (thinking, rationale, uncertainty)
+
+---
+
+## License
+
+MIT © Eileen Chou
 
