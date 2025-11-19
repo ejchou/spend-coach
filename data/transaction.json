@@ -1,0 +1,7 @@
+[
+  {"id":"t01","date":"2025-10-06","merchant":"Trader Joe's","amount":48.32,"category":"Groceries"},
+  {"id":"t02","date":"2025-10-07","merchant":"DoorDash","amount":27.90,"category":"Food Delivery"},
+  {"id":"t03","date":"2025-10-08","merchant":"Whole Foods","amount":64.15,"category":"Groceries"},
+  {"id":"t04","date":"2025-10-10","merchant":"Payroll","amount":1850.00,"category":"Income"},
+  {"id":"t05","date":"2025-10-11","merchant":"Uber Eats","amount":22.40,"category":"Food Delivery"}
+]
