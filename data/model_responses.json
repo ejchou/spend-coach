@@ -1,0 +1,37 @@
+{
+  "groceries_high": {
+    "message": "Groceries running high — +20% vs your average week.",
+    "confidence": 0.82,
+    "latency_ms": 320,
+    "rationale": ["3 trips in 5 days", "Higher basket size than usual"],
+    "suggestion": "Auto-move $15/week into Groceries Goal to smooth spend."
+  },
+  "delivery_streak": {
+    "message": "Food delivery is trending up — 3× this week.",
+    "confidence": 0.58,
+    "latency_ms": 410,
+    "rationale": ["Weeknight orders increasing"],
+    "suggestion": "Set a ‘2 per week’ soft limit with friendly reminders."
+  },
+  "paycheck_deposit": {
+    "message": "Deposit detected — a good moment to pay yourself first.",
+    "confidence": 0.76,
+    "latency_ms": 290,
+    "rationale": ["Regular paycheck pattern"],
+    "suggestion": "Move 10% ($185) to your Emergency Goal automatically."
+  },
+  "slow_fallback": {
+    "message": "Model is slow — showing a safe default.",
+    "confidence": null,
+    "latency_ms": 1100,
+    "rationale": ["Timeout > 800ms"],
+    "suggestion": "You can still move money or view budgets manually."
+  },
+  "error": {
+    "message": "Model unavailable. You’re in control — try again later.",
+    "confidence": null,
+    "latency_ms": null,
+    "rationale": [],
+    "suggestion": "Manual budgeting and goals remain available."
+  }
+}
