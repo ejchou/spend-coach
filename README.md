@@ -1,8 +1,8 @@
 # Spend Coach — Real-Time Coaching UI (Block AI Fellowship Demo)
 
-**Live Demo:** [Framer or Lovable link]  
+**Live Demo:** https://spendcoach.framer.website/ 
 **Case Study:** [Notion or site link]  
-**Figma File:** [Figma link]  
+**Figma File:** https://www.figma.com/design/zn0belzO8kskqc87FpOrUe/Spend-Coach?node-id=0-1&t=wOQ8htkGa449UuFD-1
 **Demo Video:** [`assets/demo.mp4`]  
 **Hero GIF:** [`assets/hero.gif`]
 
